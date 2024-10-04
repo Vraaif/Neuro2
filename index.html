@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro Festival by Tapparellaa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Music Submission</h2>
+        <form id="musicForm" enctype="multipart/form-data">
+            <label for="twitchNickname">Twitch Nickname:</label>
+            <input type="text" id="twitchNickname" name="twitchNickname" placeholder="Your Twitch Nickname" required>
+
+            <label for="titleSong">Title Song:</label>
+            <input type="text" id="titleSong" name="titleSong" placeholder="Song Title" required>
+
+            <label for="info">Info:</label>
+            <textarea id="info" name="info" rows="4" placeholder="Song Information" required></textarea>
+
+            <label for="cover">Upload Cover (Optional):</label>
+            <input type="file" id="cover" name="cover" accept="image/*">
+
+            <label for="video">Upload Video:</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div class="info-text">Submit your song details and video!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
