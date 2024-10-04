@@ -5,7 +5,7 @@ form.addEventListener('submit', async (e) => {
     const formData = new FormData(form);
 
     try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbz4DMBtur8LTpIvINokTowLB8Ow_FBT89A3hgr4vNfysv46X3HpgoVO2hRgL243ei3N/exec', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyQ8Bm69U4V2UkBfV6lXlfBxMqev63IvG5fso7kbhKgDeupe9zp2Rx3jq_QQxg2maVJ/exec', {
             method: 'POST',
             mode: 'cors',
             body: formData
