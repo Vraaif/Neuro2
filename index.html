@@ -9,8 +9,7 @@
 <body>
     <div class="form-container">
         <h2>Music Submission</h2>
-        <!-- Aggiungi il metodo POST e imposta l'azione per inviare il modulo al Google Apps Script -->
-        <form id="musicForm" enctype="multipart/form-data" method="POST" action="https://script.google.com/macros/s/AKfycbyQ8Bm69U4V2UkBfV6lXlfBxMqev63IvG5fso7kbhKgDeupe9zp2Rx3jq_QQxg2maVJ/exec">
+        <form id="musicForm" enctype="multipart/form-data">
             <label for="twitchNickname">Twitch Nickname:</label>
             <input type="text" id="twitchNickname" name="twitchNickname" placeholder="Your Twitch Nickname" required>
 
@@ -24,13 +23,13 @@
             <input type="file" id="cover" name="cover" accept="image/*">
 
             <label for="video">Upload Video:</label>
-            <input type="file" id="video" name="video" accept="video/*" required>
+            <input type="file" id="video" name="video" required> <!-- Cambiato qui -->
 
             <input type="submit" value="Submit">
         </form>
         <div class="info-text">Submit your song details and video!</div>
     </div>
 
-    <!-- Rimuovi il file script.js poiché non è più necessario per la gestione del form -->
+    <script src="script.js"></script>
 </body>
 </html>
