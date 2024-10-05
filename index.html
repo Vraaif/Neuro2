@@ -16,14 +16,14 @@
             <label for="titleSong">Title Song:</label>
             <input type="text" id="titleSong" name="titleSong" placeholder="Song Title" required>
 
-            <label for="info">Info:</label>
-            <textarea id="info" name="info" rows="4" placeholder="Song Information" required></textarea>
+            <label for="info">Info (Optional):</label>
+            <textarea id="info" name="info" rows="4" placeholder="Song Information (Optional)"></textarea>
 
             <label for="cover">Upload Cover (Optional):</label>
             <input type="file" id="cover" name="cover" accept="image/*">
 
-            <label for="video">Upload Video:</label>
-            <input type="file" id="video" name="video" required> <!-- Cambiato qui -->
+            <label for="video">Upload Video (Required):</label>
+            <input type="file" id="video" name="video" accept="video/*" required>
 
             <input type="submit" value="Submit">
         </form>
