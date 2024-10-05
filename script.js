@@ -1,7 +1,7 @@
-const form = document.getElementById('musicForm');
-form.addEventListener('submit', async (e) => {
-    e.preventDefault();
+document.getElementById('musicForm').addEventListener('submit', async function(e) {
+    e.preventDefault(); // Evita il comportamento predefinito del form
 
+    const form = document.getElementById('musicForm');
     const formData = new FormData(form);
 
     try {
